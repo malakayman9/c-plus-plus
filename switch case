@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+void main() {
+
+
+	char grade;
+	cout << "enter grade" << endl;
+		cin >> grade;
+		 
+			switch (grade)
+			{
+			case 'a':
+				cout << "excellant";
+				break;
+
+			case 'b':
+						cout << "v.good";
+						break;
+			case 'A':
+				cout << "excellant";
+				break;
+
+			case 'B':
+				cout << "v.good";
+				break;
+			default:
+				cout << "invaledd character";
+				break;
+			}
+
+		
+
+}
