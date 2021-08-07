@@ -1,0 +1,2 @@
+#include using namespace std;
+void main() { int age; cout << "plz enter your age" << endl; cin >> age; cout << "welcome, your age is "<< age; }
