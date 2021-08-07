@@ -1,0 +1,9 @@
+#include using
+namespace std;
+void main() 
+{ int x;
+cout << "enter one number"; 
+cin >> x; 
+if (x % 2 == 0)
+{ cout << "even"; }
+else { cout << "odd"; }
