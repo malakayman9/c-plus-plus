@@ -1,0 +1,6 @@
+#include using namespace std; void main() { int fact = 1; int n; cout << "enter one number" << endl; cin >> n; for (int i = 1; i <= n; i++) { fact = i * fact;
+
+}
+
+cout << fact << endl;
+}
