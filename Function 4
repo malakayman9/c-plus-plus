@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+bool cheknumber(int x)
+{
+	
+	if (x % 2 == 0)
+	{
+		return true;
+	}
+	else {
+		return false;
+		}
+}
+
+void main() {
+	int w;
+	cout << "enter one number" <<endl;
+	cin >> w;
+	cout << cheknumber(w);
+}
