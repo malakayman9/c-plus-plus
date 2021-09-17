@@ -1,0 +1,13 @@
+#include<iostream>
+#include<fstream> 
+using namespace std;
+
+int main()
+{
+	ofstream out;
+	out.open("product info.txt", ios::app);
+	out << "name:malak ayman"<<endl;
+	out << "age:21"<<endl;
+	out.close();
+	return 0;
+}
