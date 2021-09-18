@@ -1,0 +1,22 @@
+#include<iostream>
+#include<fstream> 
+using namespace std;
+
+int main()
+{
+	int a = 5, b = 10,sum;
+	
+	ifstream in;
+	in.open("product info.txt");
+	in >> a;
+	in >> b;
+	in.close();
+	
+	sum = a + b;
+	ofstream out("result");
+	out << sum ;
+	out.close();
+
+
+	return 0;
+}
