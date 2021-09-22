@@ -1,0 +1,61 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+class person
+{
+	int ssn;
+public:
+	int age;
+	string name;
+	// construcrot
+	person(int a) 
+	{
+		age = a;
+	}
+	// defulte
+	person()
+	{
+
+	}
+	void setssn()
+	{
+		int x = 0;
+		cin >> x  ;
+		if (x>100)
+		{
+			ssn = x;
+		}
+		else 
+		{
+			ssn = 70;
+		}
+	}
+	int getssn() 
+	{
+		return  ssn;
+	}
+	void print(string x,int y) 
+	{
+		cout <<"your name is " << x <<endl;
+		cout << "your age is " << y << endl;
+	}
+	// destructor
+	~person()
+	{
+
+	}
+};
+void main() 
+{
+	person p(20);
+	cout << p.age << endl;
+	person p1;
+	cout << "plz enter name"<<endl;
+	cin >> p1.name;
+	cout << "plz enter age"<<endl;
+	cin >> p1.age;
+	p1.print(p1.name, p1.age);
+	p1.setssn();
+	cout<< p1.getssn();
+}
