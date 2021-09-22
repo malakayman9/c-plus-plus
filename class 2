@@ -1,0 +1,38 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class rectangle
+{
+public:
+	int h;
+	int w;
+
+ void setvalue(int x, int y)
+ {
+	 if (x > 0 & y > 0) 
+	 {
+		 h = x;
+		 w = y;
+	 }
+ }
+ int area()
+ {
+	 
+	return  h* w;
+	 
+ }
+
+};
+
+
+
+
+void main()
+{
+	rectangle r1;
+	cin >> r1.h;
+	cin >> r1.w;
+	r1.setvalue(r1.h, r1.w);
+	r1.area();
+	
+}
