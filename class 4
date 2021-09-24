@@ -1,0 +1,50 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+class vehicle 
+{
+public :
+	int time;
+	float distance;
+	int speed(int x, float y) 
+	{
+
+		return y / x;
+	}
+};
+class metro :public vehicle
+{
+public:
+	int modle;
+
+};
+class car :public vehicle
+{
+public:
+	int num_of_passenger;
+
+};
+void main() 
+{
+	int x, y,car_speed,metro_speed;
+	cout << "enter time and distance"<<endl;
+	cin >> x ;
+	cin >> y;
+	metro m1;
+	metro_speed=m1.speed(x, y);
+	cout << metro_speed;
+	cout << "enter time and distance"<< endl;
+	cin >> x;
+	cin >> y;
+	car c1;
+	car_speed = c1.speed(x, y);
+	if (car_speed > metro_speed)
+	{
+		cout << "car is faster";
+	}
+	else 
+	{
+		cout << "metro is faster";
+	}
+}
