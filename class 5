@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+
+class mother
+{
+public:
+	mother()
+	{
+		cout << "default mother";
+	}
+	mother(int a)
+	{
+		cout << "user def mother";
+	}
+};
+class son :public mother
+{
+public:
+	son() 
+	{
+		cout << "default son";
+	}
+	son (int a):mother(5)
+	{
+		cout << "user def son";
+	}
+};
+void main() 
+{
+	son ahmed;
+}
